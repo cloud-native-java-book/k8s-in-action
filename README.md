@@ -1,8 +1,9 @@
 # Kubernetes Components & Concepts:
 
-## Persistent Volumes
 
-* Pod volumes should also be mounted in the container image - at build time - in order to be accessed by the container.
+This repo is a result of [Kubernetes in Action](https://www.manning.com/books/kubernetes-in-action) reading. which is one of the best books that have been written to explore the Kubernetes World.
+
+## Persistent Volumes
 
 #### Volumes Type:
 
