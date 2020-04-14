@@ -26,4 +26,11 @@ used for mounting cloud provide-specific storage.
 
 
 ### gitRepo: Using Git Repo as the starting point for a volume:
+gitRepo:
+  repository: https://...
+  revision: masater # which branch
+  directory: . # whether to clone the project in a new folder or in the root folder 
 
+
+### PersistentVolume:
+PersistentVolumes don;t belong to any namespace, they are cluster-level resources like nodes.
