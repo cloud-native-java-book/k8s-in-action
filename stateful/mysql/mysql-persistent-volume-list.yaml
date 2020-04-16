@@ -1,0 +1,42 @@
+kind: List
+apiVersion: v1
+items:
+  - apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: mysql-in1-volume
+    spec:
+      capacity:
+        storage: 50Mi
+      accessModes:
+      - ReadWriteOnce
+      persistentVolumeReclaimPolicy: Retain
+      hostPath:
+        path: /data/db
+        type: Directory
+  - apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: mysql-in2-volume
+    spec:
+      capacity:
+        storage: 50Mi
+      accessModes:
+      - ReadWriteOnce
+      persistentVolumeReclaimPolicy: Retain
+      hostPath:
+        path: /data/db
+        type: Directory
+  - apiVersion: v1
+    kind: PersistentVolume
+    metadata:
+      name: mysql-in3-volume
+    spec:
+      capacity:
+        storage: 50Mi
+      accessModes:
+      - ReadWriteOnce
+      persistentVolumeReclaimPolicy: Retain
+      hostPath:
+        path: /data/db
+        type: Directory

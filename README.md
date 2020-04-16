@@ -35,3 +35,11 @@ gitRepo:
 
 ### PersistentVolume:
 PersistentVolumes don;t belong to any namespace, they are cluster-level resources like nodes.
+
+
+
+## StatefulSets:
+
+* provide a stable network identity: each pod created by a StatefulSet
+is assigned an ordinal index (zero-based), which is then used to derive
+the pod's and hostname, and to attach stable storage to the pod.
